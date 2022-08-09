@@ -1,9 +1,8 @@
-header .row
-{
-    text-align: center;
+body {
+    min-width: 320px;
 }
 
-#art-gallery-logo{
+#art-gallery-logo {
     padding-right: 5px;
     text-align: right;
     font-size: 28px;
@@ -11,7 +10,7 @@ header .row
     padding-top: 8px;
 }
 
-#art-gallery-name{
+#art-gallery-name {
     text-align: left;
     font-size: 48px;
     font-weight: 600;
@@ -19,21 +18,74 @@ header .row
     padding-left: 5px;
 }
 
-.title{
+.title {
     font-size: 32px;
     line-height: 32px;
 }
-.subtitle{
+
+.subtitle {
     color: gray;
     font-size: 13px;
 }
 
 /*NavBar*/
-.navbar{
+.navbar {
     border-top: 1px solid lightgray;
 }
 
-.navbar-toggler{
+.navbar-toggler {
     margin-left: auto;
     margin-right: auto;
 }
+
+/*MiniBanner*/
+#mini-banner {
+    position: relative;
+}
+
+#mini-banner .card {
+    width: 15rem;
+    position: absolute;
+    bottom: 1.2rem;
+    right: 2rem;
+
+}
+
+#mini-banner .btn {
+    position: relative;
+    left: 3em;
+}
+
+/*footer*/
+/*footer i {*/
+/*    font-size: 32px;*/
+/*    height: 32px;*/
+/*    width: 32px;*/
+/*    margin: 15px;*/
+/*}*/
+
+@media screen and (max-width: 767px) {
+    #mini-banner .card {
+        position: static;
+        margin-top: -0.5em;
+        margin-right: auto;
+        margin-left: auto;
+        width: 100%;
+    }
+
+    #mini-banner .card-body {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .gallery-row {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+
